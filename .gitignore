@@ -48,8 +48,12 @@ ragtest/logs/
 *.zip
 *.pdf
 
-# Images
-images/*.png
-images/*.jpg
-images/*.jpeg
-images/*.gif
+# Technical Standards
+technical_standards/
+ragtest/input/*.txt
+ragtest/prompts/*.txt
+ragtest/output.zip
+ragtest/*.txt
+outputs/*.txt
+eval_demo/*.txt
+eval_demo/*.pdf
