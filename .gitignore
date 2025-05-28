@@ -47,3 +47,9 @@ ragtest/logs/
 *.lance
 *.zip
 *.pdf
+
+# Images
+images/*.png
+images/*.jpg
+images/*.jpeg
+images/*.gif
