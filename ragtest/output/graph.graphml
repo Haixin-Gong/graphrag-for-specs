@@ -1,0 +1,148 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="BEIJING JINGYI CENTURY AUTOMATIC EQUIPMENT CO., LTD." />
+    <node id="MCZ-6000D SINGLE CRYSTAL FURNACE" />
+    <node id="MCZ-6000D" />
+    <node id="&#20027;&#28809;&#23460;" />
+    <node id="&#21103;&#28809;&#23460;" />
+    <node id="&#30707;&#22696;&#30005;&#38459;&#21152;&#28909;&#22120;" />
+    <node id="&#36719;&#36724;&#25552;&#25289;&#26230;&#20307;" />
+    <node id="&#27700;&#24179;&#30913;&#22330;" />
+    <node id="&#22402;&#30452;&#30913;&#22330;" />
+    <node id="&#38057;&#22411;&#30913;&#22330;" />
+    <node id="18&#8243;&#28909;&#31995;&#32479;" />
+    <node id="20&#8243;&#28909;&#31995;&#32479;" />
+    <node id="&#22377;&#22490;&#21319;&#38477;" />
+    <node id="&#22377;&#22490;" />
+    <node id="&#26230;&#20307;" />
+    <node id="&#36710;&#38388;" />
+    <node id="&#21378;&#25151;" />
+    <node id="&#30005;&#28304;&#26588;" />
+    <node id="&#30005;&#25511;&#26588;" />
+    <node id="&#35856;&#27874;&#25233;&#21046;&#21644;&#21151;&#29575;&#34917;&#20607;&#26588;" />
+    <node id="&#20027;&#27893;" />
+    <node id="&#21103;&#27893;" />
+    <node id="&#25805;&#20316;&#24179;&#21488;" />
+    <node id="&#20027;&#26426;" />
+    <node id="&#22320;&#22522;" />
+    <node id="&#30005;&#27668;&#20027;&#25511;&#21046;&#26588;" />
+    <node id="&#31869;&#26230;&#36724;" />
+    <node id="&#22377;&#22490;&#36724;" />
+    <node id="&#25552;&#25289;&#22836;" />
+    <node id="&#21103;&#23460;" />
+    <node id="&#36807;&#28193;&#23460;" />
+    <node id="&#28809;&#24213;&#30424;" />
+    <node id="&#19979;&#20027;&#23460;" />
+    <node id="&#19978;&#20027;&#23460;" />
+    <node id="&#28809;&#30422;" />
+    <node id="&#24213;&#24231;" />
+    <node id="&#19979;&#20256;&#21160;&#37096;&#20214;" />
+    <node id="&#27700;&#20919;&#38108;&#22871;" />
+    <node id="&#19978;&#19979;&#25377;&#22359;" />
+    <node id="&#26964;&#38081;" />
+    <node id="&#38081;&#30913;&#27969;&#20307;&#32452;&#20214;" />
+    <node id="&#25511;&#21046;&#26588;" />
+    <node id="&#30005;&#30913;&#31163;&#21512;&#22120;" />
+    <node id="&#34892;&#31243;&#24320;&#20851;" />
+    <node id="&#31934;&#23494;&#19997;&#26464;" />
+    <node id="&#33033;&#20914;&#32534;&#30721;&#22120;" />
+    <node id="&#25554;&#26495;&#38400;" />
+    <node id="&#31869;&#26230;&#21319;&#38477;&#37096;&#20214;" />
+    <node id="&#30495;&#31354;&#31995;&#32479;" />
+    <node id="&#30495;&#31354;&#27893;" />
+    <node id="&#27668;&#36335;&#31995;&#32479;" />
+    <node id="&#27700;&#36335;&#31995;&#32479;" />
+    <node id="VACUUM FURNACE CHAMBER" />
+    <node id="MAIN MACHINE LUBRICATION" />
+    <node id="FERROFLUID SEAL" />
+    <node id="SEALING COMPONENTS" />
+    <node id="TRANSITION CHAMBER CRYSTAL ROTATION FERROFLUID COMPONENTS" />
+    <node id="LOWER TRANSMISSION COMPONENTS" />
+    <node id="SEED CRYSTAL LIFTING COMPONENTS" />
+    <node id="TRANSITION CHAMBER" />
+    <node id="FERROMAGNETIC FLUID COMPONENT" />
+    <node id="BRUSH HOLDER ASSEMBLY" />
+    <node id="DC SERVO MOTOR" />
+    <node id="MAIN PUMP" />
+    <node id="AUXILIARY PUMP" />
+    <node id="COMPUTER" />
+    <node id="ELECTRICAL CABINET" />
+    <node id="MOTOR" />
+    <node id="BRUSH RING ASSEMBLY" />
+    <node id="SPEED MEASURING MOTOR" />
+    <node id="SENSOR" />
+    <node id="DAMPING SLEEVE" />
+    <node id="HEATING ELEMENT" />
+    <node id="ARGON GAS" />
+    <node id="&#32477;&#32536;&#24615;&#24046;" />
+    <node id="&#39640;&#28201;&#21152;&#28909;" />
+    <node id="&#25289;&#26230;&#36807;&#31243;" />
+    <edge source="BEIJING JINGYI CENTURY AUTOMATIC EQUIPMENT CO., LTD." target="MCZ-6000D SINGLE CRYSTAL FURNACE" />
+    <edge source="MCZ-6000D" target="&#20027;&#28809;&#23460;" />
+    <edge source="MCZ-6000D" target="&#21103;&#28809;&#23460;" />
+    <edge source="MCZ-6000D" target="&#30707;&#22696;&#30005;&#38459;&#21152;&#28909;&#22120;" />
+    <edge source="MCZ-6000D" target="&#36719;&#36724;&#25552;&#25289;&#26230;&#20307;" />
+    <edge source="MCZ-6000D" target="&#27700;&#24179;&#30913;&#22330;" />
+    <edge source="MCZ-6000D" target="&#22402;&#30452;&#30913;&#22330;" />
+    <edge source="MCZ-6000D" target="&#38057;&#22411;&#30913;&#22330;" />
+    <edge source="MCZ-6000D" target="18&#8243;&#28909;&#31995;&#32479;" />
+    <edge source="MCZ-6000D" target="20&#8243;&#28909;&#31995;&#32479;" />
+    <edge source="MCZ-6000D" target="&#22377;&#22490;&#21319;&#38477;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#28809;&#24213;&#30424;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#19979;&#20027;&#23460;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#19978;&#20027;&#23460;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#28809;&#30422;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#24213;&#24231;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#25552;&#25289;&#22836;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#25554;&#26495;&#38400;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#21103;&#28809;&#23460;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#30495;&#31354;&#31995;&#32479;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#30495;&#31354;&#27893;" />
+    <edge source="&#20027;&#28809;&#23460;" target="&#27668;&#36335;&#31995;&#32479;" />
+    <edge source="&#21103;&#28809;&#23460;" target="&#31869;&#26230;&#21319;&#38477;&#37096;&#20214;" />
+    <edge source="&#21103;&#28809;&#23460;" target="&#30495;&#31354;&#27893;" />
+    <edge source="&#21103;&#28809;&#23460;" target="&#27668;&#36335;&#31995;&#32479;" />
+    <edge source="&#22377;&#22490;" target="&#26230;&#20307;" />
+    <edge source="&#36710;&#38388;" target="&#21378;&#25151;" />
+    <edge source="&#21378;&#25151;" target="&#25805;&#20316;&#24179;&#21488;" />
+    <edge source="&#30005;&#28304;&#26588;" target="&#30005;&#25511;&#26588;" />
+    <edge source="&#30005;&#28304;&#26588;" target="&#35856;&#27874;&#25233;&#21046;&#21644;&#21151;&#29575;&#34917;&#20607;&#26588;" />
+    <edge source="&#30005;&#28304;&#26588;" target="&#27700;&#36335;&#31995;&#32479;" />
+    <edge source="&#20027;&#27893;" target="&#21103;&#27893;" />
+    <edge source="&#20027;&#26426;" target="&#22320;&#22522;" />
+    <edge source="&#20027;&#26426;" target="&#30005;&#27668;&#20027;&#25511;&#21046;&#26588;" />
+    <edge source="&#20027;&#26426;" target="&#27700;&#36335;&#31995;&#32479;" />
+    <edge source="&#31869;&#26230;&#36724;" target="&#22377;&#22490;&#36724;" />
+    <edge source="&#31869;&#26230;&#36724;" target="&#25552;&#25289;&#22836;" />
+    <edge source="&#31869;&#26230;&#36724;" target="&#21103;&#23460;" />
+    <edge source="&#31869;&#26230;&#36724;" target="&#36807;&#28193;&#23460;" />
+    <edge source="&#22377;&#22490;&#36724;" target="&#19979;&#20256;&#21160;&#37096;&#20214;" />
+    <edge source="&#22377;&#22490;&#36724;" target="&#27700;&#20919;&#38108;&#22871;" />
+    <edge source="&#22377;&#22490;&#36724;" target="&#19978;&#19979;&#25377;&#22359;" />
+    <edge source="&#22377;&#22490;&#36724;" target="&#26964;&#38081;" />
+    <edge source="&#22377;&#22490;&#36724;" target="&#38081;&#30913;&#27969;&#20307;&#32452;&#20214;" />
+    <edge source="&#21103;&#23460;" target="&#36807;&#28193;&#23460;" />
+    <edge source="&#24213;&#24231;" target="&#19979;&#20256;&#21160;&#37096;&#20214;" />
+    <edge source="&#25511;&#21046;&#26588;" target="&#30005;&#30913;&#31163;&#21512;&#22120;" />
+    <edge source="&#25511;&#21046;&#26588;" target="&#34892;&#31243;&#24320;&#20851;" />
+    <edge source="&#31934;&#23494;&#19997;&#26464;" target="&#33033;&#20914;&#32534;&#30721;&#22120;" />
+    <edge source="&#30495;&#31354;&#27893;" target="&#27700;&#36335;&#31995;&#32479;" />
+    <edge source="VACUUM FURNACE CHAMBER" target="MAIN MACHINE LUBRICATION" />
+    <edge source="FERROFLUID SEAL" target="SEALING COMPONENTS" />
+    <edge source="FERROFLUID SEAL" target="TRANSITION CHAMBER CRYSTAL ROTATION FERROFLUID COMPONENTS" />
+    <edge source="LOWER TRANSMISSION COMPONENTS" target="SEED CRYSTAL LIFTING COMPONENTS" />
+    <edge source="TRANSITION CHAMBER" target="FERROMAGNETIC FLUID COMPONENT" />
+    <edge source="BRUSH HOLDER ASSEMBLY" target="DC SERVO MOTOR" />
+    <edge source="MAIN PUMP" target="AUXILIARY PUMP" />
+    <edge source="COMPUTER" target="ELECTRICAL CABINET" />
+    <edge source="ELECTRICAL CABINET" target="MOTOR" />
+    <edge source="ELECTRICAL CABINET" target="BRUSH RING ASSEMBLY" />
+    <edge source="ELECTRICAL CABINET" target="SPEED MEASURING MOTOR" />
+    <edge source="ELECTRICAL CABINET" target="SENSOR" />
+    <edge source="MOTOR" target="DAMPING SLEEVE" />
+    <edge source="HEATING ELEMENT" target="ARGON GAS" />
+    <edge source="&#32477;&#32536;&#24615;&#24046;" target="&#39640;&#28201;&#21152;&#28909;" />
+    <edge source="&#32477;&#32536;&#24615;&#24046;" target="&#25289;&#26230;&#36807;&#31243;" />
+    <edge source="&#39640;&#28201;&#21152;&#28909;" target="&#25289;&#26230;&#36807;&#31243;" />
+  </graph>
+</graphml>
