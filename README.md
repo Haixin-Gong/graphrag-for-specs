@@ -15,7 +15,6 @@
 - Python 3.6+
 - Flask
 - Flask-CORS
-- GraphRAG（refer to https://microsoft.github.io/graphrag/get_started/）
 
 ### 前端要求
 - Node.js 14+

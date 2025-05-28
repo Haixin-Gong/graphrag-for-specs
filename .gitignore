@@ -49,6 +49,7 @@ ragtest/logs/
 *.pdf
 
 # Technical Standards
+eval_demo/
 technical_standards/
 ragtest/input/*.txt
 ragtest/prompts/*.txt
