@@ -1,5 +1,5 @@
 # GraphRAG Web Interface
-
+![主界面](images/api.png)
 这是一个基于GraphRAG的知识库系统的Web界面，支持文档上传、索引创建和知识查询功能。
 
 ## 功能特点
@@ -8,8 +8,6 @@
 - 支持创建知识库索引
 - 提供两种查询模式：Global和Local
 - 实时查询响应
-- 美观的Web界面
-- RESTful API设计
 
 ## 系统要求
 
@@ -17,7 +15,7 @@
 - Python 3.6+
 - Flask
 - Flask-CORS
-- GraphRAG（确保已安装并可以通过命令行使用）
+- GraphRAG（refer to https://microsoft.github.io/graphrag/get_started/）
 
 ### 前端要求
 - Node.js 14+
@@ -45,7 +43,7 @@ graphrag/
 
 1. 克隆仓库：
 ```bash
-git clone [repository-url]
+git clone https://github.com/Haixin-Gong/graph-rag.git
 cd graphrag
 ```
 
@@ -72,7 +70,7 @@ python server.py
 2. 启动前端开发服务器：
 ```bash
 # 在frontend目录下
-export NODE_OPTIONS=--openssl-legacy-provider  # 如果使用较新版本的Node.js
+export NODE_OPTIONS=--openssl-legacy-provider
 npm start
 ```
 前端应用将在 http://localhost:3000 运行
@@ -154,18 +152,6 @@ npm start
    - 确保文件格式为.txt
    - 检查文件大小是否超限
    - 确保上传目录有写入权限
-
-## 安全注意事项
-
-1. 文件上传安全
-   - 限制文件类型
-   - 设置大小限制
-   - 验证文件内容
-
-2. API安全
-   - 添加适当的错误处理
-   - 实施速率限制
-   - 考虑添加认证机制
 
 ## 许可证
 
