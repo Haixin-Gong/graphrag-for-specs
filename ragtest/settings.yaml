@@ -10,7 +10,7 @@ models:
     api_base: https://api.deepseek.com/v1
     # api_version: 2024-05-01-preview
     auth_type: api_key # or azure_managed_identity
-    api_key: sk-3406f79857d44ed189bda10e752265c0 # set this in the generated .env file
+    api_key: {deepseek_api_key} # set this in the generated .env file
     # audience: "https://cognitiveservices.azure.com/.default"
     # organization: <organization_id>
     # model: gpt-4-turbo-preview
@@ -29,7 +29,7 @@ models:
     api_base: https://open.bigmodel.cn/api/paas/v4/
     # api_version: 2024-05-01-preview
     auth_type: api_key # or azure_managed_identity
-    api_key: 76dc82d6400c451dba662703d1c11b04.KU6Ofunktk1YZUFM
+    api_key: {glm_api_key}
     # audience: "https://cognitiveservices.azure.com/.default"
     # organization: <organization_id>
     model: embedding-3

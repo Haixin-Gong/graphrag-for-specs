@@ -52,7 +52,6 @@ ragtest/logs/
 eval_demo/
 technical_standards/
 ragtest/input/*.txt
-ragtest/prompts/*.txt
 ragtest/output.zip
 ragtest/*.txt
 outputs/*.txt

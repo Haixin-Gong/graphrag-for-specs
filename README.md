@@ -45,6 +45,7 @@ graphrag/
 git clone https://github.com/Haixin-Gong/graph-rag.git
 cd graphrag
 ```
+将 Deepseek 和 GLM 的 API KEY 传入 settings.yaml 和 .envs (可选择)
 
 2. 安装后端依赖：
 ```bash
