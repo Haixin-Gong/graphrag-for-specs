@@ -80,7 +80,41 @@ def query():
         ], capture_output=True, text=True)
         
         if result.returncode == 0:
-            return jsonify({'success': True, 'result': result.stdout})
+            # 处理输出结果
+            output = result.stdout
+            
+            # 移除不需要的内容
+            cleaned_lines = []
+            is_vector_store_info = False  # 用于标记是否在vector store信息块中
+            
+            for line in output.split('\n'):
+                # 跳过空行
+                if not line.strip():
+                    continue
+                
+                # 跳过vector store配置信息
+                if '"default_vector_store"' in line or line.strip().startswith('{') or line.strip().startswith('}'):
+                    is_vector_store_info = True
+                    continue
+                
+                if is_vector_store_info:
+                    if line.strip().endswith('}'):
+                        is_vector_store_info = False
+                    continue
+                
+                # 跳过特定前缀的行
+                if any(line.strip().startswith(prefix) for prefix in [
+                    'INFO:', 'SUCCESS:', '"type":', '"db_url":', '"url":', 
+                    '"audience":', '"container_name":', '"database_name":', '"overwrite":'
+                ]):
+                    continue
+                
+                cleaned_lines.append(line)
+            
+            # 重新组合处理后的文本，使用两个换行符分隔段落
+            cleaned_output = '\n\n'.join(cleaned_lines)
+            
+            return jsonify({'success': True, 'result': cleaned_output})
         else:
             return jsonify({'success': False, 'message': f'查询失败: {result.stderr}'})
     except Exception as e:

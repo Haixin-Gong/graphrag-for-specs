@@ -14,6 +14,7 @@ from collections import Counter
 import math
 from sklearn.feature_extraction.text import TfidfVectorizer
 import jieba.analyse
+import logging
 
 class TextEvaluator:
     def __init__(self):
@@ -188,49 +189,52 @@ def process_pdf(pdf_file):
 
 # 使用示例
 if __name__ == "__main__":
-    evaluator = TextEvaluator()
-    
-    # 读取文件
-    cand_file_1 = "./outputs/specs/接地_global_20250520_152953_specs.txt"
-    cand_file_2 = "./outputs/specs/接地_Local Knowledge Base_20250520_153555_specs.txt"
-    cand_file_3 = "./outputs/specs/接地_unknown_20250520_152541_specs.txt"
-    cand_file_4 = "./outputs/specs/接地_User-defined Knowledge Base_20250520_153818_specs.txt"
-    gpt_file = "./data_source/eval_demo/gpt.txt"
-    ref_file = "./data_source/eval_demo/16060 接地-B16.pdf"
+    # 创建一个文件处理器，只写入评估结果
+    result_file = 'eval_demo/evaluation_metrics.txt'
+    with open(result_file, 'w') as f:
+        evaluator = TextEvaluator()
+        
+        # 读取文件
+        cand_file_1 = "./outputs/graghrag.txt"    
+        cand_file_2 = "./outputs/globalrag.txt"
+        cand_file_3 = "./outputs/globalrag2.txt"
+        cand_file_4 = "./outputs/specsrag.txt"    
+        gpt_file = "./outputs/gpt.txt"
+        ref_file = "./eval_demo/16060 接地-B16.pdf"
 
-    # 读取文件内容
-    candidate_1 = open(cand_file_1, "r").read()
-    candidate_2 = open(cand_file_2, "r").read()
-    candidate_3 = open(cand_file_3, "r").read()
-    candidate_4 = open(cand_file_4, "r").read()
-    baseline = open(gpt_file, "r").read()
-    reference = process_pdf(ref_file)
+        # 读取文件内容
+        candidate_1 = open(cand_file_1, "r").read()
+        candidate_2 = open(cand_file_2, "r").read()
+        candidate_3 = open(cand_file_3, "r").read()
+        candidate_4 = open(cand_file_4, "r").read()
+        baseline = open(gpt_file, "r").read()
+        reference = process_pdf(ref_file)
 
-    # 构建技术术语词典
-    corpus_texts = [candidate_1, candidate_2, candidate_3, candidate_4]
-    technical_terms = evaluator.build_technical_terms(reference, corpus_texts)
-    print("\n识别出的技术术语:")
-    print(technical_terms)
+        # 构建技术术语词典
+        corpus_texts = [candidate_1, candidate_2, candidate_3, candidate_4]
+        technical_terms = evaluator.build_technical_terms(reference, corpus_texts)
+        f.write("识别出的技术术语:\n")
+        f.write(str(technical_terms) + "\n\n")
 
-    # 评估所有候选文本
-    candidates = {
-        "candidate_1": candidate_1,
-        "candidate_2": candidate_2,
-        "candidate_3": candidate_3,
-        "candidate_4": candidate_4,
-        "baseline": baseline
-    }
+        # 评估所有候选文本
+        candidates = {
+            "graghrag": candidate_1,
+            "globalrag": candidate_2,
+            "globalrag2": candidate_3,
+            "specsrag": candidate_4,
+            "gpt": baseline
+        }
 
-    for name, candidate in candidates.items():
-        results = evaluator.evaluate_all(candidate, reference)
-        print(f"\n{name} 评估结果:")
-        print(f"技术指标:")
-        print(f"  - 技术术语覆盖率: {results['technical_metrics']['term_coverage']:.4f}")
-        print(f"  - 技术术语权重得分: {results['technical_metrics']['weighted_term_score']:.4f}")
-        print(f"  - 数值匹配率: {results['technical_metrics']['number_match']:.4f}")
-        print(f"  - 单位匹配率: {results['technical_metrics']['unit_match']:.4f}")
-        print(f"语义相似度: {results['semantic_similarity']:.4f}")
-        print(f"BERT F1分数: {results['bert_f1']}")
-        print(f"ROUGE分数: {results['rouge']}")
-        print(f"BLEU分数: {results['bleu']}")
-        print("-" * 50)
+        for name, candidate in candidates.items():
+            results = evaluator.evaluate_all(candidate, reference)
+            f.write(f"{name} 评估结果:\n")
+            f.write("技术指标:\n")
+            f.write(f"  - 技术术语覆盖率: {results['technical_metrics']['term_coverage']:.4f}\n")
+            f.write(f"  - 技术术语权重得分: {results['technical_metrics']['weighted_term_score']:.4f}\n")
+            f.write(f"  - 数值匹配率: {results['technical_metrics']['number_match']:.4f}\n")
+            f.write(f"  - 单位匹配率: {results['technical_metrics']['unit_match']:.4f}\n")
+            f.write(f"语义相似度: {results['semantic_similarity']:.4f}\n")
+            f.write(f"BERT F1分数: {results['bert_f1']}\n")
+            f.write(f"ROUGE分数: {results['rouge']}\n")
+            f.write(f"BLEU分数: {results['bleu']}\n")
+            f.write('\n' + '=' * 50 + '\n\n')    
