@@ -57,3 +57,13 @@ ragtest/*.txt
 outputs/*.txt
 eval_demo/*.txt
 eval_demo/*.pdf
+eval_demo/*.xlsx
+eval_demo/*.png
+
+# api key
+ragtest/.env
+ragtest/settings.yaml
+
+# private text
+homework.md
+homework/

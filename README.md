@@ -9,6 +9,7 @@
 - 支持创建知识库索引
 - 提供两种查询模式：Global和Local
 - 实时查询响应
+- 行业术语词典的创建以及生成质量的多维度评估
 
 ## 系统要求
 
@@ -34,6 +35,12 @@ graphrag/
 │   └── package.json      # 前端依赖配置
 ├── server.py             # 后端Flask服务器
 ├── requirements.txt      # Python依赖
+├── evaluation_metrics.py # 评估指标计算脚本
+├── eval_demo/           # 评估结果目录
+│   ├── evaluation_metrics.txt      # 评估详细结果
+│   ├── evaluation_results.xlsx     # 原始评估数据
+│   ├── normalized_evaluation_results_maxabs.xlsx  # 标准化后的评估数据
+│   └── radar_plot_maxabs.png      # 评估雷达图
 └── ragtest/              # GraphRAG工作目录
     └── input/           # 上传文件存储目录
 ```
@@ -152,6 +159,27 @@ npm start
    - 确保文件格式为.txt
    - 检查文件大小是否超限
    - 确保上传目录有写入权限
+
+## 系统评估
+
+系统采用多维度评估方法，包括：
+- 技术术语覆盖率：评估生成内容对关键技术术语的覆盖程度
+- 技术术语权重得分：考虑术语在文档中的重要性
+- 语义相似度：使用BERT模型计算语义相似度
+- BERT F1分数：评估生成内容的准确性
+- ROUGE-L分数：评估生成内容的连贯性
+- BLEU-4分数：评估生成内容的流畅度
+
+为了使不同评估指标具有可比性，采用最大绝对值标准化（MaxAbs）方法：
+
+```math
+X_{normalized} = \frac{X}{max(|X|)}
+```
+
+其中X为原始指标值，max(|X|)为所有指标值绝对值中的最大值。
+
+### 评估结果
+<img src="images/radar_plot_maxabs.png">
 
 ## 许可证
 
