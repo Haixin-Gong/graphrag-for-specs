@@ -60,9 +60,9 @@ eval_demo/*.pdf
 eval_demo/*.xlsx
 eval_demo/*.png
 
-# api key
-ragtest/.env
-ragtest/settings.yaml
+# # api key
+# ragtest/.env
+# ragtest/settings.yaml
 
 # private text
 homework.md

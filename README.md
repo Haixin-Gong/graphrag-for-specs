@@ -47,12 +47,11 @@ graphrag/
 
 ## 安装步骤
 
-1. 克隆仓库：
+1. 克隆仓库，添加 GraphRAG 对 Deepseek 和 GLM-embedding 模型的接口：
 ```bash
 git clone https://github.com/Haixin-Gong/graph-rag.git
 cd graphrag
 ```
-将 Deepseek 和 GLM 的 API KEY 传入 settings.yaml 和 .envs (可选择)
 
 2. 安装后端依赖：
 ```bash
@@ -63,6 +62,19 @@ pip install -r requirements.txt
 ```bash
 cd frontend
 npm install
+```
+
+## 扩展 GraphRAG 的模型接口
+初始化 GraphRAG
+```bash
+graphrag init --root ./ragtest
+```
+- 将 Deepseek 和 GLM 的 API KEY，model_base, model 传入 settings.yaml 和 .envs (可选择)
+- 修改 GraphRAG 的 *tiktoken* 工具中的 *model.py* 实现，添加以下信息：
+```bash
+# Add deepseek-chat model
+"deepseek-chat": "cl100k_base",
+"embedding-3": "cl100k_base"
 ```
 
 ## 运行应用
